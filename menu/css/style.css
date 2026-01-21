@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  color: #fc8019;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  background: #fc8019;
+  padding: 60px;
+  text-align: center;
+  color: white;
+}
+
+.hero input {
+  padding: 12px;
+  width: 300px;
+}
+
+.restaurants {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.page {
+  padding: 50px;
+}
+
+/* RESTAURANT GRID */
+.restaurants {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 25px;
+  padding: 40px;
+}
+
+/* CARD */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+  height: 400px;
+  width: 600px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* IMAGE SIZE FIX */
+.card img {
+  width: 100%;       /* full card width */
+  height: 180px;     /* fixed height */
+  object-fit: cover;/* no stretching */
+}
+
+/* TEXT */
+.card h3 {
+  margin: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0 10px 15px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* LOGIN PAGE */
+.login-body {
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.login-box {
+  width: 360px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.login-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.login-header p {
+  margin-top: 5px;
+  color: #555;
+}
+
+.orange-text {
+  color: #fc8019;
+  cursor: pointer;
+}
+
+.login-header hr {
+  width: 40px;
+  margin: 15px 0;
+  border: 1px solid #000;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background: #fc8019;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  opacity: 0.9;
+}
+
+.terms {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* ---------- APP PAGE ---------- */
+.app-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
+.app-content h1 {
+  font-size: 36px;
+}
+
+.app-content p {
+  color: #555;
+  margin: 15px 0;
+}
+
+.store-buttons {
+  margin-top: 20px;
+}
+
+.store-btn {
+  padding: 12px 20px;
+  margin-right: 10px;
+  border: none;
+  background: #fc8019;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.app-image img {
+  width: 250px;
+}
+
+/* ---------- SIGNIN PAGE ---------- */
+.signin-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.signin-box {
+  width: 320px;
+  padding: 30px;
+  border: 1px solid #ddd;
+}
+
+.signin-box h1 {
+  margin-bottom: 5px;
+}
+
+.signup-text {
+  margin-bottom: 20px;
+}
+
+.signup-text span {
+  color: #fc8019;
+  cursor: pointer;
+}
+
+.signin-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 12px;
+  background: #fc8019;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.terms {
+  font-size: 12px;
+  margin-top: 15px;
+  color: #666;
+}
